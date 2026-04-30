@@ -404,7 +404,7 @@
             position: relative;
             overflow: hidden;
         }
-.service-card:hover {
+     .service-card:hover {
             border-color: var(--accent-rose);
             transform: translateY(-15px);
             box-shadow: 0 15px 40px rgba(220, 202, 195, 0.2);
@@ -539,7 +539,7 @@
             font-size: 2.5rem;
             margin-bottom: 60px;
         }
- .doctors-grid {
+    .doctors-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
@@ -853,7 +853,7 @@
                         <i class="fas fa-robot" style="color: var(--accent-rose); margin-bottom: 10px; display: block;"></i>
                         <span id="aiTextResult"></span>
                     </div>
-[4/30/2026 9:14 AM] حوراء: </div>
+                   </div>
                 
                 <div class="ai-info scroll-reveal">
                     <h3>كيف يعمل نظام Lifeguard AI؟</h3>
@@ -925,8 +925,8 @@
             <button type="submit" class="btn w-full" style="width: 100%; border:none;">تأكيد وإرسال</button>
         </form>
     </div>
-</div>
-[4/30/2026 9:14 AM] حوراء: <footer id="footer">
+    </div>
+     <footer id="footer">
         <div class="container footer-grid scroll-reveal">
             <div class="footer-about">
                 <div class="footer-logo">Lifeguard<span>.</span></div>
@@ -1019,7 +1019,7 @@
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll); // الظهور عند التحميل أيضاً
  // 3. محاكاة تحليل الذكاء الاصطناعي (AI Analysis)
-        const startAIAnalysis = () => {
+          const startAIAnalysis = () => {
             const symptoms = document.getElementById('symptomsInput').value;
             const resultBox = document.getElementById('aiResult');
             const resultText = document.getElementById('aiTextResult');
