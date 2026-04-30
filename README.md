@@ -1,5 +1,4 @@
-# lifeguard
-[4/30/2026 9:14 AM] حوراء: <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
