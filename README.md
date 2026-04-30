@@ -1,6 +1,6 @@
- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
+     <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeGuard | عيادة منقذ الحياة الذكية</title>
@@ -685,7 +685,7 @@
             font-size: 0.9rem;
             opacity: 0.6;
         }
- /* -----------------------------------------------------------
+     /* -----------------------------------------------------------
            9. Mobile Responsive - الاستجابة للموبايل
            ----------------------------------------------------------- */
         @media (max-width: 1024px) {
@@ -703,7 +703,7 @@
             .footer-grid { grid-template-columns: 1fr; }
         }
         /* --- نافذة الحجز المنبثقة (Modal) --- */
-.booking-modal {
+    .booking-modal {
     display: none; 
     position: fixed;
     z-index: 2000;
@@ -713,9 +713,9 @@
     backdrop-filter: blur(8px);
     align-items: center;
     justify-content: center;
-}
+     }
 
-.modal-content {
+    .modal-content {
     background-color: var(--bg-body);
     padding: 40px;
     width: 90%;
@@ -724,31 +724,31 @@
     box-shadow: var(--soft-shadow);
     position: relative;
     animation: modalSlide 0.5s ease;
-}
+       }
 
-@keyframes modalSlide {
+    @keyframes modalSlide {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-}
+     }
 
-.close-modal {
+    .close-modal {
     position: absolute;
     top: 20px; left: 20px;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--primary-text);
-}
+     }
 
-.modal-content h3 {
+     .modal-content h3 {
     font-family: var(--font-heading);
     margin-bottom: 20px;
     color: var(--primary-text);
-}
+     }
 
 
     </style>
-</head>
-<body data-theme="light">
+     </head>
+     <body data-theme="light">
 
     <div class="theme-toggle-btn" id="themeSwitch" title="تبديل الوضع">
         <i class="fas fa-moon"></i>
@@ -1018,11 +1018,11 @@
 
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll); // الظهور عند التحميل أيضاً
- // 3. محاكاة تحليل الذكاء الاصطناعي (AI Analysis)
+
           const startAIAnalysis = () => {
-            const symptoms = document.getElementById('symptomsInput').value;
-            const resultBox = document.getElementById('aiResult');
-            const resultText = document.getElementById('aiTextResult');
+                  const symptoms = document.getElementById('symptomsInput').value;
+                   const resultBox = document.getElementById('aiResult');
+                 const resultText = document.getElementById('aiTextResult');
 
             if (symptoms.length < 20) {
                 alert("يرجى وصف الأعراض بشكل أكثر تفصيلاً لتمكين الـ AI من مساعدتك.");
@@ -1048,19 +1048,19 @@
                 });
             });
         });
-// وظيفة فتح النافذة
-function openBooking() {
-    document.getElementById('bookingModal').style.display = 'flex';
-}
 
-// وظيفة إغلاق النافذة وتصفير الحقول
-function closeBooking() {
+        
+     function openBooking() {
+    document.getElementById('bookingModal').style.display = 'flex';
+     }
+
+
+     function closeBooking() {
     document.getElementById('bookingModal').style.display = 'none';
     document.getElementById('bookingForm').reset(); // يمسح كل المعلومات المدخلة
-}
-
-// معالجة الإرسال (بدون Error)
-function confirmBooking(e) {
+    }
+ 
+     function confirmBooking(e) {
     e.preventDefault(); // يمنع الصفحة من التحديث وضهور الخطأ
 
     const name = document.getElementById('userName').value;
@@ -1071,10 +1071,9 @@ function confirmBooking(e) {
     
     // تصفير الاستمارة وإغلاقها
     closeBooking();
-}
+     }
 
-// ربط الأزرار بطريقة برمجية صحيحة لتجنب SyntaxError
-document.addEventListener('DOMContentLoaded', () => {
+     document.addEventListener('DOMContentLoaded', () => {
     const allBtns = document.querySelectorAll('.btn');
     
     allBtns.forEach(btn => {
@@ -1086,8 +1085,8 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }
     });
-});
+     });
 
     </script>
-</body>
-</html>
+    </body>
+    </html>
